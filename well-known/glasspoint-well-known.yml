@@ -1,0 +1,41 @@
+generated: '2026-08-22'
+method: probed
+source: https://www.glasspoint.com/.well-known/
+note: >-
+  Every /.well-known/ path probed on the only host GlassPoint operates
+  (www.glasspoint.com, a Squarespace-hosted marketing site) returned 404. The
+  Squarespace catch-all answers most paths with a 404 that carries the site's
+  HTML shell (478KB, <!doctype html>), which is NOT a document; /.well-known/security.txt
+  returns a JSON 404 body of {"message":"security.txt not found"}. No document was
+  served, so NO WellKnown or SecurityTxt pointer is emitted in apis.yml — this file
+  records an absence, not a presence.
+hosts:
+- host: www.glasspoint.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
