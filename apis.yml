@@ -20,6 +20,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://static1.squarespace.com/static/622ba70eb380531fbf6cb5df/t/6a3931508a10fa02d8b47a27/1784668758101/GlassPoint-social-1200x630.jpg?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/glasspoint/refs/heads/main/apis.yml
 x-type: company
